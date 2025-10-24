@@ -16,7 +16,6 @@ These materials illustrate how to use **Dropbox** to distribute and collect Exce
 - **`LucasIslands_ExcelTemplate.xlsx`** — Student input template.  
   Only designated input cells are editable; computed cells (e.g., wages, prices) contain pre-inserted formulas.
 - **`LucasIslands_InfoSheet.pdf`** — Instructions for students.
-- **`LucasIslands_InfoSheet.tex`** — LaTeX source for instructors to edit.
 
 ### Data Processing
 - **`process_files.m`** — MATLAB script that reads all student Excel files, assigns sequential Player IDs, and compiles key data into a single Excel file `combined.xlsx`.
