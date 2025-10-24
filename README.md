@@ -16,17 +16,23 @@ These materials illustrate how to use **Dropbox** to distribute and collect Exce
 - **`LucasIslands_ExcelTemplate.xlsx`** — Student input template.  
   Only designated input cells are editable; computed cells (e.g., wages, prices) contain pre-inserted formulas.
 - **`LucasIslands_InfoSheet.pdf`** — Instructions for students.
-  **`ExperimentSlides2025.tex`** — slides used in the lecture
+- **`ExperimentSlides2025.tex`** — slides used in the lecture.
 
 ### Data Processing
 - **`process_files.m`** — MATLAB script that reads all student Excel files, assigns sequential Player IDs, and compiles key data into a single Excel file `combined.xlsx`.
 - **`write_matrices.m`** — MATLAB script that appends aggregate and dummy-variable sheets to `combined.xlsx`.
 
+### Example of outotput
+- **`LucasIslands_ExcelTemplate (3) Oleg.xlsx`** — Excel file as submitted by a student.
+- **`LucasIslands_ExcelTemplate (4) Tatiana.xlsx`** — Excel file as submitted by a student.
+- **`LucasIslands_ExcelTemplate (5) Nigar.xlsx`** — Excel file as submitted by a student.
+- **`combined.xlsx`** - excel file which will be produced by matlab code.
+
 ---
 
 ## 3. Distributing Materials via Dropbox
 
-1. Upload `LucasIslands_ExcelTemplate.xlsx` and `LucasIslands_InfoSheet.pdf` to a Dropbox folder (keep separate from the submissions folder).  
+1. Upload `LucasIslands_ExcelTemplate.xlsx` and create and upload `LucasIslands_InfoSheet.pdf` to a Dropbox folder (keep separate from the submissions folder).  
 2. For each file, click **Share → Copy link** and ensure “Anyone with the link can view.”  
 3. Post both links on Moodle or email them to students.  
    - Students should **download** the Excel template (not edit online).  
@@ -91,7 +97,7 @@ Sequential Player IDs provide consistent keys across all sheets.
 
 If you use these materials, please cite the corresponding paper:
 
-> Kirsanova, T. et al. (2025). *Multiple Equilibria in the Absence of Commitment*. Journal of [to be completed].
+> Hashimzade, N. et al. (2025). *Lucas Islands Game in Intermediate Macroeconomics*. Journal of Economic Education.
 
 ---
 
