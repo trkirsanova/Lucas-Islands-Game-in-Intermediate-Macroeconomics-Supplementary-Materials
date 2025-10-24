@@ -1,0 +1,516 @@
+\documentclass[notes=show]{beamer}
+
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{mathpazo}
+\usepackage{hyperref}
+\usepackage{multimedia}
+
+\setcounter{MaxMatrixCols}{10}
+
+\newenvironment{stepenumerate}{\begin{enumerate}[<+->]}{\end{enumerate}}
+\newenvironment{stepitemize}{\begin{itemize}[<+->]}{\end{itemize} }
+\newenvironment{stepenumeratewithalert}{\begin{enumerate}[<+-| alert@+>]}{\end{enumerate}}
+\newenvironment{stepitemizewithalert}{\begin{itemize}[<+-| alert@+>]}{\end{itemize} }
+\newtheorem{proposition}[theorem]{Proposition}
+\usetheme{Boadilla}
+\begin{document}
+
+\title[Lucas Islands]{Lucas Islands}
+\subtitle{Classroom Game}
+\author[T. Kirsanova]{Tatiana Kirsanova}
+\institute{University of Glasgow}
+\date{Semester 2}
+\maketitle
+
+\begin{frame}%
+
+\begin{center}
+{\LARGE Let's start}
+\end{center}
+\end{frame}%
+
+
+
+\begin{frame}{Day 1 Morning}
+
+\qquad ...according to leading economic indicators (LEI) the economy is
+growing at a steady rate. Unemployment and inflation are within the target
+range.
+
+\bigskip
+
+\begin{center}
+\begin{tabular}{cccccccccccccccc}
+A & B & C & D & E & F & G & H & I & J &  &  &  &  &  & Price \\ 
+10 & 10 & 10 & 10 & 10 & 10 & 10 & 10 & 10 & 10 &  &  &  &  &  & 
+\end{tabular}
+\end{center}
+\end{frame}%
+
+\begin{frame}{Day 1 Evening}
+
+\qquad ...according to leading economic indicators (LEI) the economy is
+growing at a steady rate. Unemployment and inflation are within the target
+range.
+
+\bigskip
+
+\begin{center}
+\begin{tabular}{cccccccccccccccc}
+A & B & C & D & E & F & G & H & I & J &  &  &  &  &  & Price \\ 
+10 & 10 & 10 & 10 & 10 & 10 & 10 & 10 & 10 & 10 &  &  &  &  &  & 1.0%
+\end{tabular}
+\end{center}
+\end{frame}%
+
+
+\begin{frame}{Day 2 Morning}
+
+\qquad ...the newest craze is for goods produced on islands B and F
+
+\bigskip
+
+\begin{center}
+\begin{tabular}{cccccccccccccccc}
+A & B & C & D & E & F & G & H & I & J &  &  &  &  &  & Price \\ 
+9 & 12 & 9 & 10 & 9 & 12 & 10 & 9 & 10 & 10 &  &  &  &  &  & 
+\end{tabular}
+\end{center}
+
+\end{frame}%
+
+
+\begin{frame}{Day 2 Evening}
+
+\qquad ...the newest craze is for goods produced on islands B and F
+
+\bigskip
+
+\begin{center}
+\begin{tabular}{cccccccccccccccc}
+A & B & C & D & E & F & G & H & I & J &  &  &  &  &  & Price \\ 
+9 & 12 & 9 & 10 & 9 & 12 & 10 & 9 & 10 & 10 &  &  &  &  &  & 1.0%
+\end{tabular}
+\end{center}
+\end{frame}%
+
+\begin{frame}{Day 3 Morning}
+
+\qquad ...jobs are harder to find - unemployment figures are rising.\ 
+
+\bigskip
+
+\begin{center}
+\begin{tabular}{cccccccccccccc}
+A & B & C & D & E & F & G & H & I & J &  &  &  & Price \\ 
+8.5 & 11 & 9 & 9.5 & 8.5 & 11 & 9.5 & 9 & 9.5 & 9.5 &  &  &  & 
+\end{tabular}
+\end{center}
+\end{frame}%
+
+
+\begin{frame}{Day 3 Evening}
+
+\qquad ...jobs are harder to find - unemployment figures are rising.\ 
+
+\bigskip
+
+\begin{center}
+\begin{tabular}{cccccccccccccc}
+A & B & C & D & E & F & G & H & I & J &  &  &  & Price \\ 
+8.5 & 11 & 9 & 9.5 & 8.5 & 11 & 9.5 & 9 & 9.5 & 9.5 &  &  &  & 0.95%
+\end{tabular}
+\end{center}
+\end{frame}%
+
+
+\begin{frame}{Day 4 Morning}
+
+\qquad ...the economy is still slowing and unemployment figures are
+higher than expected.
+
+\bigskip
+
+\begin{center}
+\begin{tabular}{cccccccccccccccc}
+A & B & C & D & E & F & G & H & I & J &  &  &  &  &  & Price \\ 
+8 & 10 & 9 & 9 & 8 & 10 & 9 & 9 & 9 & 9 &  &  &  &  &  & 
+\end{tabular}
+\end{center}
+\end{frame}
+
+
+\begin{frame}{Day 4 Evening}
+
+\qquad ...the economy is still slowing and unemployment figures are
+higher than expected.
+
+\bigskip
+
+\begin{center}
+\begin{tabular}{cccccccccccccccc}
+A & B & C & D & E & F & G & H & I & J &  &  &  &  &  & Price \\ 
+8 & 10 & 9 & 9 & 8 & 10 & 9 & 9 & 9 & 9 &  &  &  &  &  & 0.9%
+\end{tabular}
+\end{center}
+\end{frame}%
+
+
+\begin{frame}{Day 5 Morning}
+
+\qquad ...unemployment is no longer a problem yet inflation
+figures are higher than those forecasted for the year.
+
+\bigskip
+
+\begin{center}
+\begin{tabular}{cccccccccccccccc}
+A & B & C & D & E & F & G & H & I & J &  &  &  &  &  & Price \\ 
+9 & 11 & 10 & 10 & 9 & 11 & 10 & 10 & 10 & 10 &  &  &  &  &  & 
+\end{tabular}
+\end{center}
+\end{frame}
+
+\begin{frame}{Day 5 Evening}
+
+\qquad ...unemployment is no longer a problem yet inflation
+figures are higher than those forecasted for the year.
+
+\bigskip
+
+\begin{center}
+\begin{tabular}{cccccccccccccccc}
+A & B & C & D & E & F & G & H & I & J &  &  &  &  &  & Price \\ 
+9 & 11 & 10 & 10 & 9 & 11 & 10 & 10 & 10 & 10 &  &  &  &  &  & 1.0%
+\end{tabular}
+\end{center}
+\end{frame}%
+
+
+\begin{frame}{Day 6 Morning}
+
+\qquad This morning the news announcer states that it will air
+regular reports from the Federal Reserve Bank. Today you hear that the Fed
+met, announced concern about the high rates of inflation and raised interest
+rate.
+
+\bigskip
+
+\begin{center}
+\begin{tabular}{cccccccccccc}
+A & B & C & D & E & F & G & H & I & J &  & Price \\ 
+10 & 11 & 10.5 & 10.5 & 10 & 11 & 10.5 & 10.5 & 10.5 & 10.5 &  & 
+\end{tabular}
+\end{center}
+\end{frame}
+
+\begin{frame}{Day 6 Evening}
+
+\qquad This morning the news announcer states that it will air
+regular reports from the Federal Reserve Bank. Today you hear that the Fed
+met, announced concern about the high rates of inflation and raised interest
+rate.
+
+\bigskip
+
+\begin{center}
+\begin{tabular}{cccccccccccc}
+A & B & C & D & E & F & G & H & I & J &  & Price \\ 
+10 & 11 & 10.5 & 10.5 & 10 & 11 & 10.5 & 10.5 & 10.5 & 10.5 &  & 1.05%
+\end{tabular}
+\end{center}
+\end{frame}
+
+\begin{frame}{Day 7 Morning}
+
+\qquad ...the Fed met and indicated that after looking
+at leading economic indicators this afternoon it will decide how successful
+the battle against inflation has been. They stated that they will take no
+action for the time being.
+
+\bigskip
+
+\begin{center}
+\begin{tabular}{cccccccccccc}
+A & B & C & D & E & F & G & H & I & J &  & Price \\ 
+10 & 11 & 10.5 & 10.5 & 10 & 11 & 10.5 & 10.5 & 10.5 & 10.5 &  & 
+\end{tabular}
+\end{center}
+\end{frame}
+
+\begin{frame}{Day 7 Evening}
+
+\qquad ...the Fed met and indicated that after looking
+at leading economic indicators this afternoon it will decide how successful
+the battle against inflation has been. They stated that they will take no
+action for the time being.
+
+\bigskip
+
+\begin{center}
+\begin{tabular}{cccccccccccc}
+A & B & C & D & E & F & G & H & I & J &  & Price \\ 
+10 & 11 & 10.5 & 10.5 & 10 & 11 & 10.5 & 10.5 & 10.5 & 10.5 &  & 1.05%
+\end{tabular}
+\end{center}
+\end{frame}%
+
+
+\begin{frame}{Day 8 Morning}
+
+\qquad ...the Fed met and reported that it feels
+inflation is no longer a threat, but it is concerned with high unemployment.
+The Fed decided to reduce interest rate to stimulate the economy.
+
+\bigskip
+
+\begin{center}
+\begin{tabular}{ccccccccccc}
+A & B & C & D & E & F & G & H & I & J & Price \\ 
+10.5 & 10.5 & 10.5 & 10.5 & 10.5 & 10.5 & 10.5 & 10.5 & 10.5 & 10.5 & 
+\end{tabular}
+\end{center}
+\end{frame}
+
+\begin{frame}{Day 8 Evening}
+
+\qquad ...the Fed met and reported that it feels
+inflation is no longer a threat, but it is concerned with high unemployment.
+The Fed decided to reduce interest rate to stimulate the economy.
+
+\bigskip
+
+\begin{center}
+\begin{tabular}{ccccccccccc}
+A & B & C & D & E & F & G & H & I & J & Price \\ 
+10.5 & 10.5 & 10.5 & 10.5 & 10.5 & 10.5 & 10.5 & 10.5 & 10.5 & 10.5 & 1.05%
+\end{tabular}
+\end{center}
+\end{frame}%
+
+
+\begin{frame}{Day 9 Morning}
+
+\qquad ...the Fed met and expressed a continued concern
+with the high levels of unemployment. The chair announced that the Fed will
+continue to stimulate the economy and so reduced interest rate. You also
+learn that people are finding factory A's, E's, G's and J's widgets
+defective.
+
+\bigskip
+
+\begin{center}
+\begin{tabular}{ccccccccccccccc}
+A & B & C & D & E & F & G & H & I & J &  &  &  &  & Price \\ 
+8.5 & 10.5 & 11 & 11 & 8.5 & 11 & 9 & 10.5 & 11 & 9 &  &  &  &  & 
+\end{tabular}
+\end{center}
+\end{frame}
+
+\begin{frame}{Day 9 Evening}
+
+\qquad ...the Fed met and expressed a continued concern
+with the high levels of unemployment. The chair announced that the Fed will
+continue to stimulate the economy and so reduced interest rate. You also
+learn that people are finding factory A's, E's, G's and J's widgets
+defective.
+
+\bigskip
+
+\begin{center}
+\begin{tabular}{ccccccccccccccc}
+A & B & C & D & E & F & G & H & I & J &  &  &  &  & Price \\ 
+8.5 & 10.5 & 11 & 11 & 8.5 & 11 & 9 & 10.5 & 11 & 9 &  &  &  &  & 1.0%
+\end{tabular}
+\end{center}
+\end{frame}
+
+\begin{frame}{Day 10 Morning}
+
+\qquad ...leading economic indicators suggest that
+unemployment is no longer a problem. The Fed did not meet today. The problem
+at factories A, E, G, and J are fixed but demand for their products is still
+low.
+
+\bigskip
+
+\begin{center}
+\begin{tabular}{ccccccccccccccc}
+A & B & C & D & E & F & G & H & I & J &  &  &  &  & Price \\ 
+9 & 10.5 & 10.5 & 10.5 & 9 & 10.5 & 9.5 & 10.5 & 11 & 9 &  &  &  &  & 
+\end{tabular}
+\end{center}
+\end{frame}
+
+\begin{frame}{Day 10 Evening}
+
+\qquad ..leading economic indicators suggest that
+unemployment is no longer a problem. The Fed did not meet today. The problem
+at factories A, E, G, and J are fixed but demand for their products is still
+low.
+
+\bigskip
+
+\begin{center}
+\begin{tabular}{ccccccccccccccc}
+A & B & C & D & E & F & G & H & I & J &  &  &  &  & Price \\ 
+9 & 10.5 & 10.5 & 10.5 & 9 & 10.5 & 9.5 & 10.5 & 11 & 9 &  &  &  &  & 1.0%
+\end{tabular}
+\end{center}
+\end{frame}
+
+\begin{frame}{Day 11 Morning}
+
+\qquad ...the chair of the Federal Reserve was replaced
+today. Leading economic indicators suggest slower than predicted growth;
+unemployment is high.
+
+\bigskip
+
+\begin{center}
+\begin{tabular}{cccccccccccccccc}
+A & B & C & D & E & F & G & H & I & J &  &  &  &  &  & Price \\ 
+9 & 9.5 & 10 & 9.5 & 9 & 10 & 9 & 10 & 10 & 9 &  &  &  &  &  & 
+\end{tabular}
+\end{center}
+\end{frame}
+
+\begin{frame}{Day 11 Evening}
+
+\qquad ...the chair of the Federal Reserve was replaced
+today. Leading economic indicators suggest slower than predicted growth;
+unemployment is high.
+
+\bigskip
+
+\begin{center}
+\begin{tabular}{cccccccccccccccc}
+A & B & C & D & E & F & G & H & I & J &  &  &  &  &  & Price \\ 
+9 & 9.5 & 10 & 9.5 & 9 & 10 & 9 & 10 & 10 & 9 &  &  &  &  &  & 0.95%
+\end{tabular}
+\end{center}
+\end{frame}
+
+\begin{frame}{Day 12 Morning}
+
+\qquad ...Leading Economic Indicators show continued
+high unemployment rates. The Fed has lowered the interest rate.
+
+\bigskip
+
+\begin{center}
+\begin{tabular}{ccccccccccccccc}
+A & B & C & D & E & F & G & H & I & J &  &  &  &  & Price \\ 
+9.5 & 9.5 & 9.5 & 9.5 & 9.5 & 10 & 9 & 9.5 & 10 & 9 &  &  &  &  & 
+\end{tabular}
+\end{center}
+\end{frame}
+
+\begin{frame}{Day 12 Evening}
+
+\qquad ...Leading Economic Indicators show continued
+high unemployment rates. The Fed has lowered the interest rate.
+
+\bigskip
+
+\begin{center}
+\begin{tabular}{ccccccccccccccc}
+A & B & C & D & E & F & G & H & I & J &  &  &  &  & Price \\ 
+9.5 & 9.5 & 9.5 & 9.5 & 9.5 & 10 & 9 & 9.5 & 10 & 9 &  &  &  &  & 0.95%
+\end{tabular}
+\end{center}
+\end{frame}
+
+\begin{frame}{Day 13 Morning}
+
+\qquad ...LEIs indicate that the economy is stabilizing.
+
+\bigskip
+
+\begin{center}
+\begin{tabular}{cccccccccccccc}
+A & B & C & D & E & F & G & H & I & J &  &  &  & Price \\ 
+9.5 & 9.5 & 9.5 & 9.5 & 9.5 & 9.5 & 9.5 & 9.5 & 9.5 & 9.5 &  &  &  & 
+\end{tabular}
+\end{center}
+\end{frame}
+
+\begin{frame}{Day 13 Evening}
+
+\qquad ...LEIs indicate that the economy is stabilizing.
+
+\bigskip
+
+\begin{center}
+\begin{tabular}{cccccccccccccc}
+A & B & C & D & E & F & G & H & I & J &  &  &  & Price \\ 
+9.5 & 9.5 & 9.5 & 9.5 & 9.5 & 9.5 & 9.5 & 9.5 & 9.5 & 9.5 &  &  &  & 0.95%
+\end{tabular}
+\end{center}
+\end{frame}
+
+\begin{frame}{Day 14 Morning}
+
+\qquad ...the Fed met and announced a concern with
+inflation: it is too high.
+
+\bigskip
+
+\begin{center}
+\begin{tabular}{cccccccccccccc}
+A & B & C & D & E & F & G & H & I & J &  &  &  & Price \\ 
+10 & 10 & 9.5 & 10 & 10 & 10 & 10 & 10.5 & 10 & 10 &  &  &  & 
+\end{tabular}
+\end{center}
+\end{frame}
+
+\begin{frame}{Day 14 Evening}
+
+\qquad ...the Fed met and announced a concern with
+inflation: it is too high.
+
+\bigskip
+
+\begin{center}
+\begin{tabular}{cccccccccccccc}
+A & B & C & D & E & F & G & H & I & J &  &  &  & Price \\ 
+10 & 10 & 9.5 & 10 & 10 & 10 & 10 & 10.5 & 10 & 10 &  &  &  & 1.0%
+\end{tabular}
+\end{center}
+\end{frame}
+
+\begin{frame}{Day 15 Morning}
+
+\qquad ...the Fed Chair thinks inflation is totally
+unacceptable. In the future, he will attempt to raise interest rate.
+
+\bigskip
+
+\begin{center}
+\begin{tabular}{cccccccccccc}
+A & B & C & D & E & F & G & H & I & J &  & Price \\ 
+10.5 & 10.5 & 10.5 & 10.5 & 10 & 10.5 & 10.5 & 10.5 & 11 & 10.5 &  & 
+\end{tabular}
+\end{center}
+\end{frame}
+
+\begin{frame}{Day 15 Evening}
+
+\qquad ...the Fed Chair thinks inflation is totally
+unacceptable. In the future, he will attempt to raise interest rate.
+
+\bigskip
+
+\begin{center}
+\begin{tabular}{cccccccccccc}
+A & B & C & D & E & F & G & H & I & J &  & Price \\ 
+10.5 & 10.5 & 10.5 & 10.5 & 10 & 10.5 & 10.5 & 10.5 & 11 & 10.5 &  & 1.05%
+\end{tabular}
+\end{center}
+\end{frame}%
+
+
+\end{document}

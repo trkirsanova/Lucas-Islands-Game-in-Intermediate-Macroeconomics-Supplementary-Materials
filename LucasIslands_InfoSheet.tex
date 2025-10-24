@@ -1,0 +1,124 @@
+\documentclass[a4paper,11pt]{article}%
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{graphicx}
+\usepackage{makeidx}
+\usepackage{amsmath}
+\usepackage{natbib}%
+\usepackage{xcolor}
+\usepackage{lscape}
+\usepackage{multirow}
+\setcounter{MaxMatrixCols}{30}
+\usepackage[framemethod=TikZ]{mdframed} % in preamble
+
+
+\textwidth=162mm
+\textheight=210mm
+\evensidemargin0pt
+\oddsidemargin0pt
+\topmargin0pt
+\makeindex
+%\input{tcilatex}
+\begin{document}
+
+\begin{mdframed}[linewidth=1pt,roundcorner=5pt,backgroundcolor=gray!5]
+\subsubsection*{Student Information Sheet}
+
+\subsubsection*{Setup}
+\begin{itemize}
+  \item There are 10 islands. 
+  \item You live on one of them. You have a family: a worker (who produces a good on the island) and a shopper (who buys goods across islands). You control both roles.
+  \item Each island has a factory---producing a unique good---where your worker works.
+  \item You want to buy goods from all islands, and you buy them every day.
+  \item You know price of goods on your island, but you need to send your
+shopper to visit other islands to learn prices there. Only at \textit{the
+end of the day} when your shopper returns you will know all prices.
+  \item You need to send your worker to work every \textit{morning} and tell
+the worker \textbf{how many hours to work today}. 
+\end{itemize}
+
+\subsubsection*{Objective}
+
+You want to get the best balance between \emph{consumption} (what you can buy) and \emph{leisure} (your free time). Working more hours gives you more income to spend, but leaves you with less time to relax. Each day, you must decide how many hours to work.
+\bigskip
+
+Your decision depends on the \emph{expected real wage} — the pay you think you’ll get once prices are taken into account. In the morning, you do not know the \emph{overall price level} in the economy for that day (the \emph{aggregate price level}), you need to predict it first. Then, the expected real wage is calculated as your nominal wage (the number of dollars you’re offered per hour) divided by your predicted price level. The more accurate your price forecast, the better you can balance work and leisure; if your forecast is consistently wrong, you may end up working too much or too little.
+
+\subsubsection*{How Many Hours to Work?}
+You need to think about \textbf{real wage}, not \textbf{nominal wage}:
+\begin{itemize}
+  \item The \textbf{nominal wage} $w$ is the number of dollars per hour you are offered.
+  \item The \textbf{real wage} $w/P$ measures the purchasing power of one hour of work, adjusting for the price level $P$.
+  \item Since $P$ is unknown in the morning, only $w$, you form an estimate $P^e$ and compute the \emph{expected real wage} $w/P^e$.
+  \item The number of hours to work is proportional to your expected real wage, i.e. you have an upward-sloping labor supply curve:
+  \[
+  \text{Hours to work} \;=\; 0.8 \times \frac{w}{P^e}.
+  \]
+\end{itemize}
+
+\subsubsection*{Examples}
+\begin{itemize}
+  \item If $w = 10$ and $P^e = 1.0$, then hours $= 0.8\times 10/1.0 = 8$.
+  \item If $w = 11$ and $P^e = 1.0$, then hours $= 0.8\times 11/1.0 = 8.8$.
+  \item If $w = 11$ and $P^e = 1.1$, then hours $= 0.8\times 11/1.1 = 8$ (no change from the baseline).
+\end{itemize}
+
+\subsubsection*{Practical Task in the Game}
+
+In summary, you want to get the best balance between consumption and leisure.
+\bigskip
+
+To do so, \textit{given nominal wage $w$ and news about the state of the economy,} \textbf{you need to predict the aggregate price level, $P^e$, accurately.} Accurate predictions lead to better decisions; systematic forecast errors lead to working too much or too little.
+
+\subsubsection*{Why Nominal Wages Change}
+\begin{itemize}
+  \item A change in $w$ could signal higher or lower \emph{relative demand} for your island’s good — affecting your real wage.
+  \item Or it could reflect a \emph{general change in all prices} (inflation/deflation), leaving your real wage unchanged.
+  \item Your task is to use the news each morning to help distinguish these cases.
+\end{itemize}
+
+\subsubsection*{Daily Sequence}
+\begin{enumerate}
+  \item \textbf{Morning:} Learn your island's nominal wage $w$ (record it in Column~2) and hear the daily news announcement.
+  \item \textbf{Forecast:} Make a guess $P^e$ and record it (Column~3).
+  \item \textbf{Decision:} Calculate $w/P^e$ (Column~4) and the hours to work (Column~5). If the answer sheet is electronic, Excel built-in formulas will calculate values in columns 4 and 5.
+  \item \textbf{Evening:} Learn $P$, record it (Column~6), and compute your actual real wage $w/P$ (Column~7). If the answer sheet is electronic, Excel built-in formulas will calculate values in column 7.
+\end{enumerate}
+
+\subsubsection*{Preview of Answer Sheet (first 3 lines)}
+The zero line shows what happened yesterday, before you start the game. The actual price level was 1, and the wage in your island was 10, so the real wage was 10. When we play, you start filling from line one.
+
+\begin{center}
+\small
+\setlength{\tabcolsep}{5pt}
+\renewcommand{\arraystretch}{1.2}
+\begin{tabular*}{0.92\linewidth}{@{\extracolsep{\fill}} c c c c c c c c}
+\hline
+\multicolumn{2}{l}{Island name:}   &       &       &       &      &       &         \\
+\hline
+\textbf{Day} &
+\textbf{Nominal} &
+\textbf{Expected} &
+\textbf{Expected} &
+\textbf{Hours to} &
+\textbf{Actual} &
+\textbf{Actual} &
+\textbf{Notes}\\
+ & \textbf{Wage $w$} & \textbf{Price $P^e$} & \textbf{Real $w/P^e$} & \textbf{$0.8 \times w/P^e$} & \textbf{Price $P$} & \textbf{Real $w/P$} & \\
+\hline
+(1)   & (2) & (3)    & (4)    & (5)    & (6) & (7) & (8) \\
+\hline
+0   & 10.00 & --    & --    & --    & 1.00 & 10.00 & History \\
+1   &       &       &       &       &      &       &         \\
+2   &       &       &       &       &      &       &         \\
+3   &       &       &       &       &      &       &         \\
+\hline
+\end{tabular*}
+\end{center}
+
+\noindent
+In the game, the complete sheet contains one row per day (typically for 15 days). The layout is
+identical to this preview.
+
+\end{mdframed}
+\end{document}
